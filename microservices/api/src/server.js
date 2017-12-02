@@ -16,6 +16,14 @@ app.get('/ui/theme.css', function(req, res) {
 	res.sendFile(path.join(__dirname, 'ui', 'theme.css'));
 });
 
+app.get('/ui/div1.jpg', function(req, res) {
+	res.sendFile(path.join(__dirname, 'ui', 'div1.jpg'));
+});
+
+app.get('/ui/title.png', function(req, res) {
+	res.sendFile(path.join(__dirname, 'ui', 'title.png'));
+});
+
 app.get('/main.js', function(req, res) {
 	res.sendFile(path.join(__dirname, 'main.js'));
 });

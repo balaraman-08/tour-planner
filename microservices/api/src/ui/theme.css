@@ -1,0 +1,99 @@
+.div1{
+  position: relative;
+  /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("div2.jpg"),url("div1.jpg");
+  background-position: left,right;
+  background-repeat: no-repeat;
+  background-size: 25%;*/
+  top: 0px;
+  left: 0px;
+  /*background-color: #ffae00;*/
+  text-align: center;
+  height: 50px;
+  width: 100%;
+}
+
+.div2{
+  position: relative;
+  top: -60px;
+  /*left: 0px;*/
+  background-color: #ff6347;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("div1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+}
+
+.welcome{
+    position: relative;
+    top: 10px;
+    font-size: 70px;
+    color: white;
+    font-family: cursive;
+}
+
+.title {
+font-family:Sofia;
+text-decoration:none;
+line-height:1;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+font-size:37px;
+letter-spacing:3px;
+color:#000000;
+display:block;
+position:absolute;
+top:0px;
+}
+
+
+.st{
+
+    box-width: 10px;
+}
+
+.go{
+  position: relative;
+      height: 40px;
+      width: 70px;
+      left: 15px;
+      background-color: #ffd700;
+      border-width: 0px;
+      border-radius: 5px;
+      font-size: 25px;
+      font-family: serif;
+      text-align: center ;
+}
+
+.go:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px white;
+}
+
+.st_box{
+  position: relative;
+  top: -1.5px;
+  /*left: 600px;*/
+  height: 40px;
+  width: 300px;
+  border-radius: 5px 5px 5px 5px;
+  border-width: 0px;
+  padding: 0px 8px 0px 8px;
+  font-size: 20px
+}
+.st_box:hover{
+  box-shadow: 2px;
+  cursor: pointer;
+}
+#station_list{
+  font-size: 5px;
+}
+.result{
+  position: relative;
+}
+#station_list{
+  position: relative;
+  width: 300px;
+}
