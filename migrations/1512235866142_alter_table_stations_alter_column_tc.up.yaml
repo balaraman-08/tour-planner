@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "stations" ALTER COLUMN "tc" TYPE numeric;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "stations" ALTER COLUMN "tc" DROP DEFAULT;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "stations" ALTER COLUMN "tc" SET NOT NULL;
+  type: run_sql

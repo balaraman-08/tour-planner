@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "spots" ALTER COLUMN "time" TYPE numeric;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "spots" ALTER COLUMN "time" DROP DEFAULT;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "spots" ALTER COLUMN "time" SET NOT NULL;
+  type: run_sql

@@ -1,24 +1,25 @@
 var express = require('express');
-var app = express();
-var request = require('request');
-var router = express.Router();
 var morgan = require('morgan');
+var path = require('path');
 var bodyParser = require('body-parser');
-require('request-debug')(request);
+var fetchAction =  require('fetch');
 
-var hasuraExamplesRouter = require('./hasuraExamples');
-
-var server = require('http').Server(app);
-
-router.use(morgan('dev'));
-
+var app = express();
+app.use(morgan('combined'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
 
-app.use('/', hasuraExamplesRouter);
+app.get('/', function(req, res) {
+	res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
 
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!');
+app.get('/ui/theme.css', function(req, res) {
+	res.sendFile(path.join(__dirname, 'ui', 'theme.css'));
+});
+
+app.get('/main.js', function(req, res) {
+	res.sendFile(path.join(__dirname, 'main.js'));
+});
+
+app.listen(8080, function() {
+	console.log("Connected to port 8080");
 });

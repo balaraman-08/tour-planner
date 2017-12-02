@@ -1,0 +1,7 @@
+- args:
+    sql: CREATE TABLE "stations"("id" integer NOT NULL, "name" text NOT NULL, "code"
+      text NOT NULL, "tc" integer NOT NULL, PRIMARY KEY ("id","code") )
+  type: run_sql
+- args:
+    name: stations
+  type: add_existing_table_or_view
