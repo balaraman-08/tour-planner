@@ -1,0 +1,11 @@
+- args:
+    permission:
+      columns:
+      - id
+      - name
+      - code
+      - tc
+      filter: {}
+    role: anonymous
+    table: stations
+  type: create_select_permission

@@ -1,0 +1,12 @@
+- args:
+    permission:
+      columns:
+      - id
+      - name
+      - pop
+      - tc
+      - time
+      filter: {}
+    role: anonymous
+    table: spots
+  type: create_select_permission
